@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	<fieldset>
+		<field
+			name="course_id"
+			type="hidden"
+		/>
+		<field
+			name="name"
+			type="text"
+			label="COM_RACE_COURSE_NAME"
+			description="COM_RACE_COURSE_NAME_DESC"
+			size="60"
+			maxlength="45"
+			class="inputbox"
+			default=""
+		/>
+		<field
+			name="short_description"
+			type="textarea"
+			label="COM_RACE_COURSE_SHORT_DESC"
+			description="COM_RACE_COURSE_SHORT_DESC_DESC"
+			rows="3"
+			cols="85"
+			size="255"
+			maxlength="255"
+			class="inputbox"
+			default=""
+		/>
+		<field
+			name="distance"
+			type="text"
+			label="COM_RACE_COURSE_DISTANCE"
+			description="COM_RACE_COURSE_DISTANCE_DESC"
+			size="60"
+			maxlength="11"
+			class="inputbox"
+			default=""
+		/>
+		<field
+			name="distance_units"
+			type="list"
+			label="COM_RACE_COURSE_DISTANCE_UNITS"
+			description="COM_RACE_COURSE_DISTANCE_UNITS_DESC"
+			class="inputbox"
+			default="">
+			<option value="Miles">Miles</option>
+			<option value="Kilometres">Kilometres</option>
+			<option value="Yards">Yards</option>
+			<option value="Metres">Metres</option>
+			<option value="Hours">Hours</option>
+		</field>
+		<field
+			name="long_description"
+			type="textarea"
+			label="COM_RACE_COURSE_LONG_DESC"
+			description="COM_RACE_COURSE_LONG_DESC_DESC"
+			rows="3"
+			cols="85"
+			size="255"
+			maxlength="255"
+			class="inputbox"
+			default=""
+		/>
+		<field
+			name="ridewithgps_id"
+			type="text"
+			label="COM_RACE_COURSE_RIDEWITHGPS_ID"
+			description="COM_RACE_COURSE_RIDEWITHGPS_ID_DESC"
+			size="60"
+			maxlength="11"
+			class="inputbox"
+			default=""
+		/>
+	</fieldset>
+</form>

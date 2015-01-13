@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="component" version="3.3" method="upgrade">
+	<name>Race</name>
+	<!-- The following elements are optional and free of formatting constraints -->
+	<creationDate>November 2014</creationDate>
+	<author>21st Century Clubs</author>
+	<authorEmail/>
+	<authorUrl>http://www.21stcenturyclubs.co.uk</authorUrl>
+	<copyright>(C) 2014 21st Century Clubs</copyright>
+	<license>http://www.gnu.org/copyleft/gpl.html GNU/GPL</license>
+	<!--  The version string is recorded in the components table -->
+	<version>0.1.0</version>
+	<!-- The description is optional and defaults to the name -->
+	<description>Race</description>
+
+    <install> <!-- Runs on install -->
+            <sql>
+                    <file driver="mysql" charset="utf8">sql/install.mysql.sql</file>
+            </sql>
+    </install>
+    <uninstall> <!-- Runs on uninstall -->
+            <sql>
+                    <file driver="mysql" charset="utf8">sql/uninstall.mysql.sql</file>
+            </sql>
+    </uninstall>
+
+	<update> <!-- Runs on update -->
+		<schemas>
+			<schemapath type="mysql">sql/updates/mysql</schemapath>
+		</schemas>
+	</update>
+
+	<!-- Site Main File Copy Section -->
+	<!-- Note the folder attribute: This attribute describes the folder
+		to copy FROM in the package to install therefore files copied
+		in this section are copied from /site/ in the package -->
+	<files folder="site">
+		<folder>controllers</folder>
+		<folder>helpers</folder>
+		<folder>language</folder>
+		<folder>views</folder>
+		<filename>index.html</filename>
+		<filename>race.php</filename>
+	</files>
+
+	<languages folder="site/language">
+    	<language tag="en-GB">en-GB/en-GB.com_race.ini</language>
+    </languages>
+
+ 	<administration>
+		<!-- Administration Menu Section -->
+		<menu>COM_RACE</menu>
+		<submenu>
+			<menu view="course" alt="RACE/Course">COM_RACE_COURSES</menu>
+		</submenu>
+		<!-- Administration Main File Copy Section -->
+		<!-- Note the folder attribute: This attribute describes the folder
+			to copy FROM in the package to install therefore files copied
+			in this section are copied from /admin/ in the package -->
+		<files folder="admin">
+			<folder>controllers</folder>
+			<folder>helpers</folder>
+			<folder>language</folder>
+			<folder>models</folder>
+			<folder>sql</folder>
+            <folder>tables</folder>
+			<folder>views</folder>
+			<filename>access.xml</filename>
+			<filename>config.xml</filename>
+			<filename>race.php</filename>
+			<filename>index.html</filename>
+		</files>
+	</administration>
+
+</extension>

@@ -1,0 +1,16 @@
+DROP TABLE IF EXISTS `#__race_courses`;
+
+CREATE TABLE IF NOT EXISTS `#__race_courses` (
+  `course_id` INT(11) UNSIGNED NOT NULL AUTO_INCREMENT,
+  `name` VARCHAR(45) NULL DEFAULT NULL,
+  `short_description` VARCHAR(255) NULL DEFAULT NULL,
+  `long_description` TEXT(65535) NULL DEFAULT NULL,
+  `distance` INT(11) UNSIGNED NULL DEFAULT NULL,
+  `distance_units` VARCHAR(45) NULL DEFAULT NULL,
+  `status` VARCHAR(45) NULL DEFAULT NULL,
+  `ridewithgps_id` INT(11) UNSIGNED NULL DEFAULT NULL,
+  `created` DATETIME NOT NULL,
+  `modified` DATETIME NOT NULL,
+  PRIMARY KEY (`course_id`),
+  UNIQUE INDEX `course_id_UNIQUE` (`course_id` ASC))
+ENGINE = InnoDB AUTO_INCREMENT=0 DEFAULT CHARSET=utf8;
