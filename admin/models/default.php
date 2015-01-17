@@ -25,7 +25,7 @@ class RaceModelsDefault extends JModelBase
     protected $__state_set = null;
     protected $_db = null;
     protected $_limitstart = 0;
-    protected $_limit = 10;
+    protected $_limit = 100;
     protected $_pagination = null;
     protected $_total = null;
     //protected $id = null;

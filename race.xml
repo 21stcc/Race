@@ -9,7 +9,7 @@
 	<copyright>(C) 2014 21st Century Clubs</copyright>
 	<license>http://www.gnu.org/copyleft/gpl.html GNU/GPL</license>
 	<!--  The version string is recorded in the components table -->
-	<version>0.1.0</version>
+	<version>0.1.1</version>
 	<!-- The description is optional and defaults to the name -->
 	<description>Race</description>
 
